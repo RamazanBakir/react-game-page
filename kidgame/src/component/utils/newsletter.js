@@ -21,7 +21,7 @@ const NewsLetter = () => {
                 showToast('SUCCESS', "Thank you for subscribing !!!");
                 textInput.current.value="";
             }
-            else {
+            if(userData.newsletter === "failed") {
                 showToast('ERROR', "You already subscribed to newsletter ");
                 textInput.current.value="";
             }
