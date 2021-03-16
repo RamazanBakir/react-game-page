@@ -79,13 +79,12 @@ nav {
 
 .newsletter_container {
   margin-top: 20px;
-  border-top: 5px solid #3c3c3c;
+  border-top: 1px solid #3c3c3c;
   padding-top: 20px;
 }
 
 .newsletter_container h1 {
     text-align: center;
-    font-family: 'Yellowtail', cursive;
 }
 
 .newsletter_container .form {

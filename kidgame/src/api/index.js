@@ -16,3 +16,33 @@ export const getGames = async(prevState,page=1,order="asc",limit="10") => {
         throw error;
     }
 }
+
+export const addNewsletter = async(data) => {
+    try {
+        const findUser = await axios.get(`${URL_SERVER}/newsletter?email=${data.email}`);
+
+        if(!Array.isArray(findUser.data) || !findUser.data.length) {
+            // user will be added
+            const response = await axios({
+                method: 'POST',
+                url: `${URL_SERVER}/newsletter`,
+                data: {
+                    email: data.email
+                }
+            });
+
+            return {
+                newsletter: 'added',
+                email: response.data
+            }
+        }
+        else {
+            // user already in the database
+            return {
+                newsletter: 'failed'
+            }
+        }
+    } catch(error) {
+        throw error;
+    }
+}
