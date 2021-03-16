@@ -1,9 +1,9 @@
-import React from 'react';
+import HomeGames from './homeGames'
 
 const Home = () => {
     return (
         <>
-            Home
+            <HomeGames />
         </>
     )    
 }
