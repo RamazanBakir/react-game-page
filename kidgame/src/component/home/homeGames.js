@@ -39,6 +39,7 @@ const HomeGames = () => {
                                 <img
                                     style={{width:'100%',height:'400px'}}
                                     src={item.image}
+                                    alt="game images"
                                 />
                                 <div className="author">
                                     <Moment format="DD MMMM">

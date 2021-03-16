@@ -203,11 +203,11 @@
   ],
   "newsletter": [
     {
-      "id": 1,
-      "email": "yemicodes@gmail.com"
+      "email": "yemicodes@gmail.com",
+      "id": 1
     },
     {
-      "email": "adeyemie6@gmail.com",
+      "email": "adrikebert771@gmail.com",
       "id": 2
     }
   ],

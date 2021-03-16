@@ -1,5 +1,5 @@
 import * as api from '../../api';
-import { GET_GAMES, ADD_NEWSLETTER } from '../types';
+import { GET_GAMES, ADD_NEWSLETTER, CLEAR_NEWSLETTER } from '../types';
 
 // games
 export const getGames = (homeGames,page,order,limit) => ({
@@ -11,4 +11,12 @@ export const getGames = (homeGames,page,order,limit) => ({
 export const addNewsletter = (data) => ({
     type: ADD_NEWSLETTER,
     payload: api.addNewsletter(data)
+})
+
+export const clearNewsletter = () => ({
+    type: CLEAR_NEWSLETTER,
+    payload: {
+        newsletter: false,
+        email: []
+    }
 })
