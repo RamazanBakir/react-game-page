@@ -35,7 +35,7 @@ const HomeGames = () => {
                 variant="outline-dark" 
                 onClick={() => loadMoreGames()}
             >
-                Load more games
+                Get more games
             </Button>
             :null}
         </>
