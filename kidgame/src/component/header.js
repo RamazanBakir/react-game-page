@@ -8,7 +8,7 @@ const Header = () => {
             <Navbar>
                 <LinkContainer to="/">
                     <Navbar.Brand>
-                        Gefeasoft Kids Games '[ö_ö]'
+                        Gefeasoft Kids Games [^_^]
                     </Navbar.Brand>
                 </LinkContainer>
             </Navbar>
