@@ -96,18 +96,18 @@ nav {
            Game-page
 /////////////////////////////////////*/
 
-.article_container h1 {
+.about_container h1 {
 font-size: 58px;
 font-weight: 300;
 }
 
-.article_container .image{
+.about_container .image{
   background-size: cover !important;
   background-repeat: no-repeat !important;
   width: 100%;
   height: 500px;
 }
-.article_container .author {
+.about_container .author {
   margin-top: 10px;
   font-style: italic;
   font-weight: 300;

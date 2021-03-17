@@ -55,7 +55,7 @@ const HomeGames = () => {
                                     <div className="excerpt">{item.excerpt}</div>
                                     <LinkContainer 
                                         className="mt-3"
-                                        to={`/article/${item.id}`}
+                                        to={`/about/${item.id}`}
                                     >
                                     <Button 
                                         variant="outline-dark"
