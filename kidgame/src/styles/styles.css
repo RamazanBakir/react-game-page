@@ -1,0 +1,314 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url('./babybg.jpg');
+}
+
+.headbar {
+	background-color: white;
+	color: black;
+}
+
+.bdpage {
+	padding: 20px;
+}
+.smaldoc {
+	background: url('./smalldoc.png') center no-repeat;
+	animation: sd 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	height: 200px;
+	width: 200px;
+}
+.firstaid {
+	background: url('./firstaidbg.png') center no-repeat;
+	animation: fa 0.9s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	height: 200px;
+	width: 200px;
+}
+
+.doctors {
+	background: url('./doctorsbg.png') center no-repeat;
+	animation: d 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	height: 200px;
+	width: 200px;
+}
+
+@keyframes fa {
+	0% {
+		-webkit-transform: translate(2px, 1px) rotate(0deg);
+	}
+	10% {
+		-webkit-transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		-webkit-transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		-webkit-transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		-webkit-transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		-webkit-transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		-webkit-transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		-webkit-transform: translate(2px, 1px) rotate(-1deg);
+	}
+	80% {
+		-webkit-transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		-webkit-transform: translate(2px, 2px) rotate(0deg);
+	}
+	100% {
+		-webkit-transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+@keyframes sd {
+	0% {
+		transform: translateY(6);
+	}
+	100% {
+		transform: translate(-50px);
+	}
+}
+
+@keyframes d {
+	0% {
+		transform: translateY(6);
+	}
+	100% {
+		transform: translateX(-50px);
+	}
+}
+
+nav {
+	border-bottom: 1px solid #6c6c6c;
+}
+.navbar {
+	justify-content: center;
+}
+.nav {
+	border-bottom: 1px solid #e6e6e6;
+}
+.nav .nav-link {
+	font-weight: lighter;
+}
+.LogoName {
+	color: black !important;
+	padding: 20px;
+	font-weight: bolder;
+}
+
+.searchInput {
+	border-radius: 0px;
+	border: 2px solid black;
+	background-color: rgb(0, 0, 0, 0);
+	margin-right: 20px !important;
+	margin-top: 5px;
+}
+.searchBtn {
+	margin-top: 5px;
+	border-radius: 0px;
+	border: 2px solid black;
+	color: black;
+	background-color: rgb(0, 0, 0, 0);
+}
+
+.searchBtn:hover {
+	border: 2px solid white;
+	background-color: white;
+	color: black;
+}
+
+.viewGameBtn {
+	border-radius: 0px;
+	font-family: 'Carter One', cursive;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	border: 3px solid purple;
+	margin-bottom: 40px;
+	color: purple;
+}
+
+.viewGameBtn:hover {
+	border-radius: 0px;
+	font-family: 'Carter One', cursive;
+	width: 150px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 18px;
+	border: 3px solid yellow;
+	color: black;
+	background-color: yellow;
+	transform: skew(-10deg);
+}
+
+.loadMoreGameBtn {
+	border-radius: 0px;
+	text-align: center;
+	border-radius: 0px;
+	font-family: 'Carter One', cursive;
+	width: 250px;
+	padding: 10px;
+	font-size: 18px;
+	border: 3px solid yellow;
+	margin-bottom: 40px;
+	background-color: yellow;
+}
+
+.loadMoreGameBtn:hover {
+	transform: scale(1.5);
+}
+/*////////////////////////////////////
+            MASONRY CSS
+/////////////////////////////////////*/
+.card-columns {
+	padding: 20px;
+}
+
+.imagecard {
+	border-radius: 0px;
+	border: 1px solid #f9f9f9;
+	margin-bottom: 10px;
+}
+.my-masonry-grid {
+	display: -webkit-box; /* Not needed if autoprefixing */
+	display: -ms-flexbox; /* Not needed if autoprefixing */
+	display: flex; /* gutter size offset */
+	width: 100%;
+}
+.my-masonry-grid_column {
+	/* gutter size */
+	background-clip: padding-box;
+}
+
+.img-hover-zoom {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.img-hover-zoom img {
+	transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+	transform: scale(1.5);
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+	/* change div to reference your elements you put in <Masonry> */
+	background-color: #f9f9f9;
+	margin-bottom: 30px;
+}
+
+.my-masonry-grid .content {
+	padding-left: 25px;
+	padding-right: 20px;
+}
+.my-masonry-grid .title {
+	font-size: 23px;
+	font-weight: 500;
+	font-family: 'Luckiest Guy', cursive;
+}
+
+.my-masonry-grid .content .excerpt {
+	font-weight: 100;
+}
+
+.my-masonry-grid .time {
+	margin-top: 30px;
+	font-size: 16px;
+	background-color: #f9f9f9;
+	font-weight: bold;
+	font-family: 'Carter One', cursive;
+	color: rgb(82, 172, 247);
+}
+
+@media (max-width: 800px) {
+	.my-masonry-grid {
+		margin-left: -15px; /* gutter size offset */
+	}
+	.my-masonry-grid_column {
+		padding-left: 15px; /* gutter size offset */
+	}
+	.my-masonry-grid_column > div {
+		margin-bottom: 15px; /* space between items */
+	}
+}
+
+/*////////////////////////////////////
+            NEWSLETTER
+/////////////////////////////////////*/
+
+.newsletter_container {
+	margin-top: 20px;
+	border-top: 1px solid rgb(199, 196, 196);
+	padding-top: 20px;
+	text-align: center;
+}
+
+.newsletter_container h1 {
+	text-align: center;
+	font-family: 'Marck Script', cursive;
+	font-weight: 580;
+}
+
+.newsletter_container .form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.newsletterForm {
+	border-radius: 0px;
+	border: 2px solid rgb(82, 172, 247);
+	padding: 20px;
+	transform: skew(-10deg);
+}
+
+.newsButton {
+	border-radius: 0px;
+	font-family: 'Carter One', cursive;
+	width: 250px;
+	padding: 10px;
+	font-size: 18px;
+	border: 3px solid purple;
+	background-color: purple;
+	color: white;
+}
+
+.newsButton:hover {
+	transform: scale(1.5);
+}
+/*////////////////////////////////////
+           Game-page
+/////////////////////////////////////*/
+
+.about_container h1 {
+	font-size: 58px;
+	font-weight: 300;
+}
+
+.about_container .image {
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	width: 100%;
+	height: 500px;
+}
+.about_container .author {
+	margin-top: 10px;
+	font-style: italic;
+	font-weight: 300;
+}
